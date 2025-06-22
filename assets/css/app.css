@@ -3216,15 +3216,25 @@ footer .footer-main .widget .input-group button {
   font-family: "Font Awesome 5 Pro";
 }
 
+.slick-prev::after,
+.slick-next::after {
+  font-family: "Font Awesome 5 Free"; /* Or "Font Awesome 6 Free" depending on your version */
+  font-weight: 900; /* Required for solid icons */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .slick-prev::after {
-  content: "\f053";
+  content: "\f053"; /* Left arrow */
   right: 72px !important;
 }
 
 .slick-next::after {
-  content: "\f054";
+  content: "\f054"; /* Right arrow */
   right: 16px !important;
 }
+
 
 .match-stream-slider {
   margin: 0 -15px;
